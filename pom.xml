@@ -369,16 +369,16 @@
                                     <version>2.4</version>
                                 </plugin>
                                 <plugin>
-                                    <groupId>org.codehaus.mojo</groupId>
-                                    <artifactID>cobertura-maven-plugin</artifactID>
-                                    <version>2.5.1</version>
-                                    <configration>
-                                        <formats>
-                                            <format>html</format>
-                                            <format>xml</format>
-                                        </formats>
-                                    </configration>
-                                </plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactID>cobertura-maven-plugin</artifactID>
+                        <version>${cobertura.version}</version>
+                        <configration>
+                            <formats>
+                                <format>html</format>
+                                <format>xml</format>
+                            </formats>
+                        </configration>
+                    </plugin>
                             </reportPlugins>
                         </configuration>
                         <dependencies>
@@ -503,6 +503,8 @@
                         <version>2.1</version>
                     </plugin>
                 </plugins>
+                <!-- test -->
+                <!--test-->
             </reporting>
         </profile>
     </profiles>
